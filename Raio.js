@@ -32,8 +32,8 @@ describe('======== HORA DO CODE REVIEW ========', function () {
                 
                 // Abrir a página da web somente após o usuário fornecer uma resposta
                 await driver.get("https://gitlab.marica.rj.gov.br/users/sign_in");
-                await driver.findElement(By.css("#user_login")).sendKeys("gabriel.santos@libresolucoes.com.br");
-                await driver.findElement(By.css("#user_password")).sendKeys("almondega");
+                await driver.findElement(By.css("#user_login")).sendKeys("INSERIR EMAIL");  // AQUI DEVE SER COLOCADO O EMAIL DE LOGIN DO GITHUB
+                await driver.findElement(By.css("#user_password")).sendKeys("INSERIR SENHA"); // AQUI DEVE SER COLOCADA A SENHA DE LOGIN DO GITHUB
                 await driver.findElement(By.xpath(".//button[contains(.,'Sign in')]")).click();
                 await driver.findElement(By.xpath(".//aside[@id='super-sidebar']/div[2]/div/nav/ul/li[3]/a")).click();
                 var inputElement = await driver.findElement(By.css(".gl-clear-icon-button > .gl-button-icon"));
